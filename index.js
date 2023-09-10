@@ -152,9 +152,12 @@ const port = process.env.PORT || 5000
 app.use(cors())
 
 app.get('/', (req, res) => {
-  res.send('car doctor server  is running ')
+  res.send('vercel testing is running  ')
 })
 
+app.get('/sercvices ',(req,res)=>{
+  res.send('its working')
+})
 
 app.listen(port, () => {
   console.log(`my server is running on port ${port}`);
